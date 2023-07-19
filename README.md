@@ -109,7 +109,7 @@ Load the updated environment variables from the .profile file
 
     source ~/.profile
     
-Install Node.js version 18.16.1 using nvm    
+Install Node.js version 16.15.0 using nvm    
     
     nvm install 18.16.1  
 
