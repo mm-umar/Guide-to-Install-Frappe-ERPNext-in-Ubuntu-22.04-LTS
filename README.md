@@ -1,3 +1,4 @@
+
 # Guide-to-Install-Frappe-ERPNext-in-Ubuntu-22.04-LTS
 A complete Guide to Install Frappe Bench in Ubuntu 22.04 LTS and install Frappe/ERPNext Application
 
@@ -109,7 +110,7 @@ Load the updated environment variables from the .profile file
 
     source ~/.profile
     
-Install Node.js version 16.15.0 using nvm    
+Install Node.js version 18.16.1 using nvm    
     
     nvm install 18.16.1  
 
@@ -128,9 +129,15 @@ Install yarn globally using npm
     sudo apt-get install xvfb libfontconfig wkhtmltopdf
     
 
-### STEP 12 install frappe-bench
+### STEP 12: Install Frappe Bench
 
-    sudo -H pip3 install frappe-bench
+If the first command doesn't work, try the second one:
+	
+	sudo -H pip3 install frappe-bench
+
+If that doesn't work, use the following command:
+	
+	sudo -H pip3 install frappe-bench --break-system-packages
 
 Check version
     
@@ -175,5 +182,3 @@ Install ERPNext app
 Start bench
     
     bench start
-
-    
